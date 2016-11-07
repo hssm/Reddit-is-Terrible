@@ -1,0 +1,217 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+@-moz-document domain("reddit.com") {
+  
+  /* Yes, everything gets an !important because of that stupid custom ccs garbage. */
+  
+  
+  body,
+  .content,
+  .sitetable,
+  .commentarea .comment,
+  .usertext .md,
+  .usertext.grayed .md-container,
+  .side,
+  .side div,
+  .side .usertext-body ol,
+  .side .titlebox .usertext-body ol ol,
+  .link .midcol, .link .rank, .link .title::before, .link .title::after,
+  .styleToggle, .subscribers, .users-online, .leavemoderator, .titlebox form.flairtoggle, .toggle.leavecontributor-button,
+  .usertext pre,
+  .thing,
+  .link .entry,
+  .listing-page .link:hover,
+  .combined-search-page .search-result-group footer .nav-buttons, .linklisting .nav-buttons, .nextprev,
+  .debuginfo,
+  .footer,
+  .footer-parent,
+  .footer div.col a,
+  .titlebox h1 a,
+  /* Luckily, I was trained in the ancient Egyptian CSS technique. */
+  .comment,
+  .comment .comment,
+  .comment .comment .comment,
+  .comment .comment .comment .comment,
+  .comment .comment .comment .comment .comment,
+  .comment .comment .comment .comment .comment .comment,
+  .comment .comment .comment .comment .comment .comment .comment,
+  .comment .comment .comment .comment .comment .comment .comment .comment,
+  .comment .comment .comment .comment .comment .comment .comment .comment .comment,
+  .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment,
+  .comments-page .comment,
+  .comments-page .comment .comment,
+  .comments-page .comment .comment .comment,
+  .comments-page .comment .comment .comment .comment,
+  .comments-page .comment .comment .comment .comment .comment,
+  .comments-page .comment .comment .comment .comment .comment .comment,
+  .comments-page .comment .comment .comment .comment .comment .comment .comment,
+  .comments-page .comment .comment .comment .comment .comment .comment .comment .comment,
+  .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment,
+  .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+    background-color: #000 !important;
+    background: #000 !important;
+    border: 0 !important;
+    color: #ccc !important;
+  }
+    
+  .titlebox .hover {
+    filter: invert(95%) !important;
+  }
+  
+  .title, .thing .title {
+    color: #ccf !important;
+  }
+  .thing .title:visited {
+    color: #556 !important;
+  }
+  .thing .title:hover {
+    color: #88f !important;
+  }
+  .thing.last-clicked {
+    border: 1px dashed #555 !important;
+  }
+  .listing-chooser {
+    display: none !important;
+  }
+  #header {
+    background-color: #000 !important;
+    color: #fff !important;
+    border-bottom: 1px solid #444 !important;
+  }
+  #header-img {
+    filter: invert(30%) !important;
+  }
+  
+  .tabmenu li a,
+  .next-button a {
+    background-color: #222 !important;
+    color: #686868 !important;
+    border: 0px !important;
+  }
+  .tabmenu .selected a {
+    background-color: #444 !important;
+    border: 0px !important;
+    color: #b88 !important;
+  }
+  #header-bottom-right {
+    background-color: #222 !important;
+  }
+  #header-bottom-right a {
+    color: #88e !important;
+  }
+  .tagline a {
+    color: #99c !important;
+  }
+  #sr-header-area,
+  #sr-more-link {
+    background-color: #222 !important;
+  }
+  #sr-header-area a {
+    color: #fff !important;
+  }
+  .commentarea {
+    background-color: #000 !important;
+    border: 1px solid #444 !important;
+  }
+  .commentarea > .usertext {
+    background-color: #000 !important;
+    border: 1px solid #222 !important;
+  }
+  .commentarea textarea {
+    background-color: #222 !important;
+    border: 1px solid #444 !important;
+  }
+  .commentarea div {
+    background-color: #000 !important;
+  }
+  .usertext p {
+    color: #aaa !important;
+  }
+  :not(.titlebox) > .usertext blockquote {
+    background: #151515 !important;
+    border-left: 3px solid #335 !important;
+  }
+  .usertext blockquote a {
+    background-color: #222 !important;
+    color: #478 !important;
+  }
+  .usertext a:hover {
+    color: #55a !important;
+  }
+  .usertext pre,
+  code,
+  .usertext-body code,
+  .usertext-body p code {
+    background-color: #11111a !important;
+    border: 0px solid #444 !important;
+    color: #fff !important;
+  }
+  .expando .usertext-body .md {
+    border: 1px solid #444 !important;
+  }
+  
+  .md-container .md ul {
+    background: #151515 !important;
+/*     border-left: 4px solid #335 !important;  */
+  }
+  .md ul li:nth-child(2n+2), .md ol li:nth-child(2n+2) {
+    background: #202020 !important;
+  }
+  .md ul li:nth-child(2n+1), .md ol li:nth-child(2n+1) {
+    background: #151515 !important;
+  }
+  
+  .md ul, .md ol, .titlebox .usertext-body .md h5 {
+    background: #151515 !important;
+    border-color: #335 !important;
+  }
+  
+  .md h1, .commentarea h1, .wiki-page .wiki-page-content .md .wiki h1, .md,
+  .titlebox .usertext-body ol, div#sr-header-area a {
+    color: #fff !important;
+  }
+  
+  .child {
+    border-left: 1px solid #333 !important;
+  }
+  .linkflairlabel {
+    background-color: #222 !important;
+    color: #aaa !important;
+    border: 1px solid #333 !important;
+  }
+  #noresults {
+    filter: invert(100%) !important;
+  }
+  .flat-list a {
+    color: #555 !important;
+  }
+
+  .author.submitter, .thing .tagline .author.submitter {
+    background-color: #000 !important;
+    color: #56f !important;
+    opacity: 1 !important;
+    padding: 0 !important;
+  }
+  
+  input[type="text"], textarea, .side #search {
+    background: #303038 !important;
+  }
+  
+  .submit-page .roundfield, .wiki-page .wiki-page-content, 
+  .titlebox form.toggle, .leavemoderator{
+    background-color: #222 !important;
+  }
+  
+  a[href$="/spoiler"] {
+    background: none repeat scroll 0 0 #322 !important;
+    color: #322 !important;
+  }
+  a[href$="/spoiler"]:hover {
+    background: none repeat scroll 0 0 #322 !important;
+    color: #fff !important;
+  }
+
+  ::-moz-selection {
+    color: #eee !important;
+    background-color: #555 !important;
+  }
+}
