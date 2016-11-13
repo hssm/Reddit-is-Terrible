@@ -1,13 +1,14 @@
 @namespace url(http://www.w3.org/1999/xhtml);
 @-moz-document domain("reddit.com") {
   
-  /* Yes, everything gets an !important because of that stupid custom ccs garbage. */
+  /* Yes, everything gets an !important because of the stupid custom ccs garbage. */
   
-  
+  html,
   body,
   .content,
   .sitetable,
   .commentarea .comment,
+  .usertext.cloneable, 
   .usertext .md,
   .usertext.grayed .md-container,
   .side,
@@ -26,6 +27,14 @@
   .footer-parent,
   .footer div.col a,
   .titlebox h1 a,
+  .side .md h5:nth-of-type(2) + blockquote,
+  .commentarea .sitetable.nestedlisting > .comment,
+  .nestedlisting > .comment::before, body.post-linkflair-mod-post .nestedlisting > .comment::before, body.post-linkflair-serious .nestedlisting > .comment::before, body.post-linkflair-stories .nestedlisting > .comment::before, body.post-linkflair-megathread .nestedlisting > .comment::before, body.post-linkflair-breaking-news .nestedlisting > .comment::before,
+  .side .md h3 + blockquote, .side blockquote,
+  .titlebox .fancy-toggle-button, .side .spacer .titlebox div:nth-of-type(1):not(.flairselector):not(.md):not(.usertext-body),
+  body::before,
+  .titlebox .bottom, 
+  #header-bottom-left, 
   /* Luckily, I was trained in the ancient Egyptian CSS technique. */
   .comment,
   .comment .comment,
@@ -52,7 +61,16 @@
     border: 0 !important;
     color: #ccc !important;
   }
-    
+
+  /* Notification-y sorta things */
+  .side .md h6:first-of-type,
+  body:not(.subscriber) #siteTable::before,
+  .side .md blockquote:nth-of-type(1){
+    background-color: #252825 !important;
+    color: #aaa !important;
+  }
+  
+  
   .titlebox .hover {
     filter: invert(95%) !important;
   }
@@ -98,6 +116,7 @@
   #header-bottom-right a {
     color: #88e !important;
   }
+  
   .tagline a {
     color: #99c !important;
   }
